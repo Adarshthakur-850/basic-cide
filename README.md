@@ -142,7 +142,9 @@ Distributed under the MIT License. See `LICENSE` for details.
 
 ---
 
-## 📞 Contact & Acknowledgements
+### ✨ Made with ❤️ by **Adarsh Thakur**
 
-Created by **Adarsh Thakur**.
-For feedback or questions, open an issue or connect on GitHub.
+
+📍 LinkedIn: [https://www.linkedin.com/in/adarsh-thakur-8368](https://www.linkedin.com/in/adarsh-thakur-8368)
+
+📍 GitHub: [https://github.com/Adarshthakur-850](https://github.com/Adarshthakur-850)
