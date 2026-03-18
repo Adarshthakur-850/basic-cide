@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 25fr 25fr 25fr;
+            grid-template-rows: 25 auto 25fr;
+            grid-template-areas:
+                "header header header"
+                "nav c1 s1"
+                "footer footer footer";
+        }
+
+        header {
+            background-color: red;
+            height: 100px; 
+            grid-area: header;
+        }
+
+        nav {
+            background-color: chocolate;
+            height: 300px; 
+            grid-area: nav;
+        }
+
+        #c1 {
+            background-color: blueviolet;
+            height: 300px; 
+            grid-area: c1;
+        }
+
+        #s1 {
+            background-color: darkgoldenrod;
+            height: 300px; 
+            grid-area: s1;
+        }
+
+        footer {
+            background-color: darkgoldenrod;
+            height: 100px; 
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>Header Text</header>
+        <nav>Nav</nav>
+        <div id="c1">Contents</div>
+        <div id="s1">Side</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

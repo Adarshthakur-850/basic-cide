@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 25fr 25fr 25fr 25fr;
+            grid-template-rows: 25 auto 25fr;
+            grid-template-areas:
+                "a b b b"
+                "c d e e"
+                "c d f g";
+        }
+
+        #a {
+            background-color: red;
+            height: 300px; 
+            grid-area: a;
+        }
+
+        #b {
+            background-color: chocolate;
+            height: 300px; 
+            grid-area: b;
+        }
+
+        #c {
+            background-color: blueviolet;
+            height: 600px; 
+            grid-area: c;
+        }
+
+        #d {
+            background-color: yellowgreen;
+            height: 600px; 
+            grid-area: d;
+        }
+
+        #e {
+            background-color: darkgoldenrod;
+            height: 300px; 
+            grid-area: e;
+        }
+        #f {
+            background-color: blue;
+            height: 300px; 
+            grid-area: f;
+        }
+        #g {
+            background-color: yellow;
+            height: 300px; 
+            grid-area: g;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="a">a</div>
+        <div id="b">b</div>
+        <div id="c">c</div>
+        <div id="d">d</div>
+        <div id="e">e</div>
+        <div id="f">f</div>
+        <div id="g">g</div>
+    </div>
+</body>
+
+</html>

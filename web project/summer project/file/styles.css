@@ -1,0 +1,78 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background color */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    display: none; /* Hide hamburger menu icon initially */
+}
+
+.main-nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.main-nav .nav-links {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+
+.main-nav .nav-links:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .main-nav {
+        display: none; /* Hide navigation links by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Height of the navbar */
+        left: 0;
+        background-color: #333;
+    }
+
+    .main-nav .nav-links {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .navbar .logo {
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .navbar-toggle {
+        display: block; /* Display hamburger menu icon on small screens */
+    }
+}

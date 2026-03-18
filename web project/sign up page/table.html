@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name{
+            color: aqua;
+            justify-content: center;
+            margin: 0 500px;
+        }
+        .grid-container{
+            display: grid;
+           
+            gap: 10px;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .grid-item{
+            background-color: aqua;
+            padding: 35px;
+            margin: 15px;
+            font-size: 25px;
+            color: #fff;
+            border: 10px;
+            
+        }
+        .item{
+           
+            grid-column-start: 1;
+            grid-column-end: 12;
+            
+
+        }
+
+        .grid-container>div{
+            background-color: rgha(255,255,255,0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <form>  
+        <div class="name">
+            <h1>Login</h1>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Adarsh"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Thakur">
+        </div>
+ 
+    </form>
+    <form>
+        <div class=" jha">
+            <h2>Near Shop</h2>
+            <input type="radio" id="tuckshop" name="shop" value="TUCKSHOP">
+            <label for="tuckshop">Tuckshop1</label><br>
+            <input type="radio" id="tuckshop" name="shop" value="TUCKSHOP">
+            <label for="tuckshop">Tuckshop2</label><br>
+            <input type="radio" id="Willsmith" name="store" value="Willsmith">
+            <label for="tuckshop">Willsmith</label><br>
+            
+        </div>
+    </form> 
+    <form>
+        <div class=" jha">
+            <h2> Item</h2>
+            <input type="radio" id="stationary" name="item" value="Stationary">
+            <label for="stationary">black market</label><br>
+            <input type="radio" id="juice" name="drink" value="Juice">
+            <label for="juice">Juice</label><br>
+            <input type="radio" id="juice" name="drink" value="Juice">
+            <label for="juice">Stole</label><br>
+            <input type="radio" id="juice" name="drink" value="Juice">
+            <label for="juice">Game</label><br>
+            
+        </div>
+    </form> 
+    <div class="grid-container">
+        <div class="item">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+        </div>
+    </div>
+    
+        
+
+</body>
+</html>

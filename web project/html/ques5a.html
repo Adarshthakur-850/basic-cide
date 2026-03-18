@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table creater</title>
+    <style>
+        table {
+            border: 2px solid black;
+
+        }
+
+        tr,
+        td {
+            border: 2px solid black;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="myfun();">Enter rows and cols</button>
+        <table id="table">
+        </table>
+    </div>
+
+    <script>
+
+        function myfun() {
+
+            let rows = window.prompt("Enter no. of rows: ", 3);
+            let cols = window.prompt("Enter no. of cols: ", 3);
+            var i;
+            var j;
+            for (i = 1; i <= rows; i++) {
+                var tr = document.createElement('tr');
+                for (j = 1; j <= cols; j++) {
+                    tr.appendChild(document.createElement('td'));
+
+                }
+
+                document.getElementById("table").appendChild(tr);
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

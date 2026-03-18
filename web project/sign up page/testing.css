@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+.nav-body{
+    width: 100%;
+    height: 60px;
+    display: flex;
+
+}
+.logo{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+
+}
+
+.brand{
+    font-size: 40px;
+}
+
+.nav{
+    width: 100%;
+    right: 30px;
+    display: flex;
+}
+
+#MenuItems{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: right;
+    align-items: center;
+}
+
+#MenuItems li a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: teal;
+    margin: 0 60px;
+}
+
+#MenuItems li a:hover{
+    text-decoration: underline;
+}
+
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px;
+    padding-top: 60px;
+    justify-items: center;
+}
+
+.featured, .new,.smart-store,.reviews,.useful-links,.follow-us,.download{
+    padding: 60px;
+}
+
+.card-body{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.28);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 200ms;
+    background-color: antiquewhite;
+}
+.card-body:hover{
+    transform: scale(1.01);
+    transition: 200ms;
+}
+.card-img{
+    width: 100%;
+}
+
+.card-body h4{
+    text-align: right;
+    padding-right: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.rating{
+    height: 30px;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+.row{
+    padding-top: 30px;
+}
+.pfp-row{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+.pfp-row p{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.pfp{
+    width: 50px;
+    height: 50px;
+}
+
+.cmt-row{
+    width: 700px;
+    margin-left: 10px;
+    margin-top:10px;
+}
+.links{
+    margin-top: 20px;
+}
+.links a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: teal;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.download-logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+}
+

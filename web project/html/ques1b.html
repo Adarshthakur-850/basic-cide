@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .bdy {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+
+        select {
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bdy">
+
+        <div class="btn">
+
+            <select name="colorpicker" id="colorpic" onchange="color();">
+                <option disabled hidden selected>Select Color</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+                <option value="yellow">yellow</option>
+                <option value="pink">pink</option>
+            </select>
+            <form action="#" id="picker">
+                <label for="colors"
+                    style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">RGB VALUE:
+                </label>
+                <input type="color" onchange="color2();" id="favcolor" name="favcolor" value="#fffff">
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+
+        function color() {
+            var value = document.getElementById("colorpic").value;
+            document.body.style.backgroundColor = value;
+        }
+        function color2() {
+            var value2 = document.getElementById("favcolor").value;
+            document.body.style.backgroundColor = value2;
+
+        }
+    </script>
+
+</body>
+
+</html>

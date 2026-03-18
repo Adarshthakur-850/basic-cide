@@ -1,0 +1,35 @@
+class demo
+{
+public static void main(string arv[]){
+int a=10;
+system.out.print1n("test . ."+a);
+}
+}
+
+
+// License statement in comments detailing ownership
+
+package com.example.project; // Replace com.example.project with your actual package name
+
+// Import statements
+import java.io.*;
+import java.util.Date;
+
+// Documentation comment
+/**
+ * Brief description of the purpose and functionality of this class.
+ * Include details like class name, author, and other relevant information.
+ */
+public class MyClass {
+
+    // Class variables (data)
+
+    // Constructors
+
+    // Methods
+
+    // The main method, entry point of the program
+    public static void main(String[] args) {
+        // Code for the main method goes here
+    }
+}

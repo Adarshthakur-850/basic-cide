@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./register.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="">
+            <div id="form_header">Sign Up</div>
+            <div class="row row_grid">
+                <input type="text" name="fname" required placeholder="First Name">
+                <input type="text" name="lname" required placeholder="Last Name">
+            </div>
+            <div class="row">
+                <input type="email" name="email" id="email" required placeholder="Email">
+            </div>
+            <div class="row row_grid">
+                <input type="text" name="password1" required placeholder="new password">
+                <input type="text" name="password2" required placeholder="confirm password">
+            </div>
+            <div class="row">
+                <input type="text" name="reg_no" id="reg_no" placeholder="Registration Number">
+            </div>
+            <div id="stud_type">Student type? </div>
+            <div class="row row_no_margin">
+                <select name="stud_type" id="">
+                    <option value="1">New Join</option>
+                    <option value="2">Existing</option>
+                    <option value="3">Alumini</option>
+                </select>
+            </div>
+            <div class="row">
+                <input type="submit" value="Register" id="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

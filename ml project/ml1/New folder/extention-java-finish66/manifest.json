@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "MyPerfectice JAVA - Finish66",
+  "version": "1.0",
+  "description": "MyPerfectice JAVA Automation - Created by Finish66",
+  "permissions": ["tabs", "activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://lpu.myperfectice.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "start": {
+      "suggested_key": {
+        "default": "Alt+Z"
+      },
+      "description": "Start Test"
+    },
+    "stop": {
+      "suggested_key": {
+        "default": "Alt+X"
+      },
+      "description": "Stop Test"
+    },
+    "submitFeedback": {
+      "suggested_key": {
+        "default": "Alt+C"
+      },
+      "description": "Submit Feedback"
+    }
+  }
+}

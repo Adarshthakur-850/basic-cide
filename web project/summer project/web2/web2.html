@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+            position: relative; /* Ensure navbar stays fixed in position */
+            z-index: 1000; /* Ensure navbar stays above other content */
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute; /* Position logo absolutely */
+            left: 20px; /* Adjust left position */
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+        }
+
+        .navbar .nav-links li {
+            margin: 0 15px;
+        }
+
+        .navbar .nav-links li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .nav-links li a i {
+            margin-right: 8px;
+        }
+
+        .navbar .burger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar .burger i {
+            font-size: 24px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-bottom: 10px; /* Adjust bottom padding */
+            }
+
+            .navbar .logo {
+                position: static; /* Reset position to static */
+                margin-bottom: 10px; /* Adjust bottom margin */
+            }
+
+            .navbar .nav-links {
+                position: relative; /* Ensure menu is relative */
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: left;
+                background-color: #333;
+                z-index: 999; /* Ensure menu stays above other content */
+            }
+
+            .navbar .nav-links.active {
+                display: flex;
+            }
+
+            .navbar .burger {
+                display: block;
+                align-self: flex-end;
+                margin-top: 10px; /* Adjust top margin */
+                z-index: 1001; /* Ensure burger icon stays above other content */
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burger.classList.toggle('open');
+            if (burger.classList.contains('open')) {
+                burger.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                burger.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+    </script>
+</body>
+</html>
